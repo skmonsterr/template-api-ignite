@@ -6,7 +6,7 @@ const app = express();
 
 app.use(express.json());
 
-app.use(categoriesRoutes);
+app.use("/categories", categoriesRoutes);
 
 app.listen(8888, () => {
   console.log("Server running on PORT 8888");
