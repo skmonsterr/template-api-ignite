@@ -12,7 +12,7 @@ const dataSource = new DataSource({
   database: "rentalx",
   synchronize: true,
   logging: true,
-  entities: [],
+  entities: ["./src/modules/**/entities/*.ts"],
   subscribers: [],
   migrations: [CreateCategories1667160217141],
 });
